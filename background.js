@@ -9,7 +9,7 @@ chrome.contextMenus.onClicked.addListener(function (info, tab) {
     const selectedText = info.selectionText;
     x = []
         for (const char in selectedText){
-            x.push(parseInt(char, 10));   
+            x.push(char.charCodeAt());   
          }
     const sum = (arr) =>{
         let total = 0;
